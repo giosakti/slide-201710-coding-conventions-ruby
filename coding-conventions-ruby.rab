@@ -1,0 +1,129 @@
+= Coding Conventions in Ruby
+
+% : subtitle
+%   in Ruby
+: author
+   Giovanni Sakti
+: institution
+   Starqle
+% : content-source
+%    id_ruby
+% : date
+%    2017-10-16
+: theme
+   .
+
+= Coding Conventions
+
+(('tag:center'))What is coding conventions?
+
+== properties
+  : hide-title
+    true
+
+= Coding Conventions
+
+  * A set of guidelines
+  * for specific programming languages
+  * recommend programming styles, practics and methods
+
+= What does it cover?
+
+  * file organization
+  * indentation
+  * comments
+  * declarations
+  * statements
+
+= What does it cover? (cont'd)
+
+  * white space
+  * naming conventions
+  * practices & principles
+  * architectural
+  * etc
+
+= Applies
+
+(('tag:center'))Coding conventions may be applied to ((*organization*)), ((*specific project*)) or ((*specific product*))
+
+== properties
+  : hide-title
+    true
+
+= Benefits
+
+  * Improve readability
+  * Make software maintenance easier
+
+= Rationale
+
+  * 40-80% of the lifetime cost of a piece of software ((*goes to maintenance*))
+  * Hardly any software is maintained for its whole life by the original author
+
+= Rationale (cont'd)
+
+  * Code conventions ((*improve the readability*)) of the software, allowing engineers to understand new code more quickly and thoroughly
+  * If you ship your source code as a product, you need to make sure it is as well packaged and clean as any other product you create
+
+= In Practice
+
+(('tag:center'))Conventions may be formalized in a documented set of rules or may be as informal as the habitual coding practices of an individual
+
+== properties
+  : hide-title
+    true
+
+= Ruby Style Guide
+
+Ruby has coding conventions document called the ((*Ruby Style Guide*)) that serve as a generic reference for Ruby programmer\n
+
+((<"github.com/bbatsov/ruby-style-guide"|URL:github.com/bbatsov/ruby-style-guide>))
+
+= RuboCop
+
+(('tag:center'))Ruby also has interesting software to enforce coding convention called ((*RuboCop*))
+
+= Installing RuboCop
+
+  # rouge console
+
+  % gem install rubocop
+
+= Using RuboCop
+
+  # rouge console
+
+  % rubocop <file-name>
+
+= Default Style Guide
+
+By default, RuboCop use the ruby style guide as the default configuration
+
+= Custom Style Guide
+
+If you want to customize the style guide, you can create a ((*.rubocop.yml*)) in the same directory where you run rubocop
+
+= Custom Style Guide
+
+You can use following default configuration file of RuboCop as reference to create .rubocop.yml
+
+((<"github.com/bbatsov/rubocop/blob/master/config/default.yml"|URL:github.com/bbatsov/rubocop/blob/master/config/default.yml>))
+
+= Custom Style Guide
+
+Consult the following url for more info about configuration
+
+((<"rubocop.readthedocs.io/en/latest/configuration"|URL:http://rubocop.readthedocs.io/en/latest/configuration/>))
+
+= Exercise
+
+Implement a custom ((*.rubocop.yml*)) configuration file according to your organization convention
+
+= Thanks
+
+(('tag:center'))Thanks
+
+== properties
+  : hide-title
+    true
